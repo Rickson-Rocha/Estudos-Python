@@ -24,9 +24,9 @@ while(contador <= numeroResposta):
   respostaUsuario = input('Digite sua opnião: ')
   if(respostaUsuario == 'satisfeito'):
     satisfeito = satisfeito + 1
+    
   elif(respostaUsuario == 'insatisfeito'):
      insatisfeito = insatisfeito + 1
   elif( respostaUsuario == 'NÃO QUERO RESPONDER'):
     naoResponder = naoResponder + 1
   contador = contador + 1 
-
