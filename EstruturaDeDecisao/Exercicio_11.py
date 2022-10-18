@@ -8,4 +8,17 @@ o salário antes do reajuste;
 o percentual de aumento aplicado;
 o valor do aumento;
 o novo salário, após o aumento. """
-salario = float(input('informa o valor do seu salário'))
+salarioAtual = float(input('informa o valor do seu salário'))
+if salarioAtual >= 280 :
+    percentual = (20/100)
+    calculo = salarioAtual + (salarioAtual*percentual)
+elif (salarioAtual >= 280 and salarioAtual <= 700):
+    percentual = (15/100)
+    calculo = salarioAtual + (salarioAtual*percentual)
+elif (salarioAtual >=700 and salarioAtual <= 1500):
+    percentual= (10/100)
+    calculo = salarioAtual + (salarioAtual*percentual)        
+elif ( salarioAtual>= 1500):
+    percentual = (5/100)
+    calculo = salarioAtual + (salarioAtual*percentual)
+print(' o salário antes do reajuste R$ {} \n percentual de aumento aplicado {} \n valor do aumento {} \n novo salário {}'.format(salarioAtual,percentual,calculo))    
