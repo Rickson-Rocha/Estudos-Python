@@ -7,19 +7,19 @@ acima de 35oC - ‘Calor da muléstia!’. O programa deverá perguntar ao usuá
 a temperatura atual e exibir a mensagem. Enquanto o usuário não digitar um
 valor negativo para a temperatura o programa deve continuar executando. """
 
-temperatura =  int(input('Informe a temperatura:  '))
+temperatura = 1 #forcando um valor para temperatura para poder atender a condição de parada do laço
+  
 while(temperatura > 0):
-    if(temperatura < 15):
-        print('Aqui não é RN')
-
-    elif(temperatura>=16 and temperatura <=25):
-            print( 'Pense num frio')
-    elif (temperatura>= 26 and temperatura <=30):
-        print('Temperatura super normal e agradável')
-    elif(temperatura>=31 and temperatura<=35):
-          print('Tá quente pra danado')
-    elif(temperatura>35):
-        print('Calor da muléstia')
+   temperatura =  int(input('Informe a temperatura:  '))
+   if(temperatura>=0 and temperatura <= 15):
+          print('Aqui não é RN')
+   elif(temperatura>=16 and temperatura <=25):
+       print( 'Pense num frio')
+   elif (temperatura>= 26 and temperatura <=30):
+          print('Temperatura super normal e agradável')
+   elif(temperatura>=31 and temperatura<=35):
+            print('Tá quente pra danado')
+   elif(temperatura>35):
+          print('Calor da muléstia')
 else:
-    print('Temperatura negativa detectada.Programa encerrado')              
-             
+      print('Temperatura negativa detectada.Programa encerrado')     
